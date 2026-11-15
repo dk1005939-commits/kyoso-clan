@@ -1,0 +1,17 @@
+{
+  "name": "kyoso-clan-website",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Kyoso Clan: a static website that puts creators and studios in one place and lets clients find and book them.",
+  "scripts": {
+    "start": "serve . -l 3000",
+    "dev": "serve . -l 3000",
+    "preview": "serve . -l 4173"
+  },
+  "devDependencies": {
+    "serve": "^14.2.0"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

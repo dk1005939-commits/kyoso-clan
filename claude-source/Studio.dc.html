@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>List your studio on Kyoso Clan</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&amp;display=swap">
+<style>
+body{margin:0}
+a{color:#FF5A1F}
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-24px)}}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.35}}
+.fl{position:absolute;animation:float 9s ease-in-out infinite}
+.pulse{animation:pulse 1.4s ease-in-out infinite}
+.g{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px}
+.f{display:flex;flex-direction:column;gap:8px;font-weight:500;border:0;padding:0;margin:0;min-width:0}
+.f>input{background:#0F1115;color:#F4F1EA;border:1px solid #3A3F4B;border-radius:12px;padding:14px;font:inherit;color-scheme:dark}
+.f>input:focus{outline:2px solid #FF5A1F;box-shadow:0 0 12px rgba(255,90,31,.4)}
+::placeholder{color:#8C8F99}
+.r{position:absolute;opacity:0;pointer-events:none}
+.o{display:flex;flex-wrap:wrap;gap:10px}
+.o label{padding:12px 20px;border:1px solid #3A3F4B;border-radius:999px;cursor:pointer}
+.r:checked+label{background:#FF5A1F;color:#0F1115;border-color:#FF5A1F;box-shadow:0 0 16px rgba(255,90,31,.5)}
+.r:focus-visible+label{outline:2px solid #F4F1EA}
+@media (prefers-reduced-motion:reduce){*{animation:none!important}}
+</style>
+</helmet>
+<div style="background:#0F1115;color:#F4F1EA;font-family:'Space Grotesk',sans-serif;min-height:2200px;position:relative;z-index:0;overflow:hidden">
+<div aria-hidden="true" style="position:absolute;inset:0;z-index:-1;pointer-events:none">
+<div style="position:absolute;width:420px;height:420px;border-radius:50%;background:#FF5A1F;opacity:.18;filter:blur(90px);top:-60px;right:-80px"></div>
+<div class="fl" style="width:200px;height:200px;border:2px solid #FF5A1F;border-radius:50%;top:140px;right:6%;opacity:.35"></div>
+<div class="fl" style="width:120px;height:68px;border:2px solid #3A3F4B;border-radius:10px;top:760px;left:4%;animation-duration:11s;animation-direction:reverse"></div>
+</div>
+<nav style="display:flex;flex-wrap:wrap;gap:16px;align-items:center;justify-content:space-between;padding:24px 48px">
+<a href="Main.dc.html" style="color:#F4F1EA;text-decoration:none;font-weight:700;font-size:20px;letter-spacing:.08em"><span class="pulse" style="display:inline-block;width:10px;height:10px;border-radius:50%;background:#FF5A1F;margin-right:10px"></span>KYOSO CLAN</a>
+<a href="Main.dc.html" style="color:#A9ABB3;text-decoration:none">Back to home</a>
+</nav>
+<main style="max-width:760px;margin:0 auto;padding:48px 24px 96px;display:flex;flex-direction:column;gap:28px">
+<div style="color:#FF5A1F;font-size:14px;font-weight:500;letter-spacing:.16em">STUDIOS</div>
+<h1 style="margin:0;font-size:56px;line-height:1.05;font-weight:700;letter-spacing:-.02em">List your studio</h1>
+<p style="margin:0;border:1px solid #FF5A1F;border-radius:16px;padding:20px 24px;line-height:1.5">Listing is not automatic. Send a request and give us permission to show your studio on the Kyoso Clan page. Share only your own work. We review every request within working days, and only approved studios appear.</p>
+<form action="https://formsubmit.co/deepakframes369@gmail.com" method="POST" enctype="multipart/form-data" target="_blank" style="background:#181B22;border:1px solid #262A33;border-radius:20px;padding:36px;display:flex;flex-direction:column;gap:24px">
+<input type="hidden" name="_subject" value="New Kyoso Clan studio listing request">
+<input type="hidden" name="_template" value="table">
+<div class="g"><label class="f">Studio name<input type="text" name="studio_name" required placeholder="Your studio name"></label><label class="f">Owner or contact person<input type="text" name="contact_person" required placeholder="Your name"></label></div>
+<div class="g"><label class="f">Phone / WhatsApp<input type="tel" name="phone" required placeholder="+91"></label><label class="f">Email<input type="email" name="email" required placeholder="studio@email.com"></label></div>
+<fieldset class="f"><legend style="padding:0;margin-bottom:8px;font-weight:500">Area</legend>
+<div class="o"><input class="r" type="radio" name="area" value="Kurnool city" required id="a1"><label for="a1">Kurnool city</label><input class="r" type="radio" name="area" value="Kallur" id="a2"><label for="a2">Kallur</label><input class="r" type="radio" name="area" value="Budhwarpet" id="a3"><label for="a3">Budhwarpet</label><input class="r" type="radio" name="area" value="Nandyal" id="a4"><label for="a4">Nandyal</label><input class="r" type="radio" name="area" value="Adoni" id="a5"><label for="a5">Adoni</label><input class="r" type="radio" name="area" value="Other" id="a6"><label for="a6">Other</label></div>
+</fieldset>
+<label class="f">Full address or Google Maps link<input type="text" name="address" required placeholder="Where clients can find you"></label>
+<fieldset class="f"><legend style="padding:0;margin-bottom:8px;font-weight:500">Niches you serve</legend>
+<div class="o"><input class="r" type="checkbox" name="niches" value="Wedding" id="n1"><label for="n1">Wedding</label><input class="r" type="checkbox" name="niches" value="Events" id="n2"><label for="n2">Events</label><input class="r" type="checkbox" name="niches" value="Product" id="n3"><label for="n3">Product</label><input class="r" type="checkbox" name="niches" value="Food" id="n4"><label for="n4">Food</label><input class="r" type="checkbox" name="niches" value="Real estate" id="n5"><label for="n5">Real estate</label><input class="r" type="checkbox" name="niches" value="Fashion" id="n6"><label for="n6">Fashion</label><input class="r" type="checkbox" name="niches" value="Reels / social media" id="n7"><label for="n7">Reels / social media</label><input class="r" type="checkbox" name="niches" value="Corporate / brand film" id="n8"><label for="n8">Corporate / brand film</label><input class="r" type="checkbox" name="niches" value="Portraits" id="n9"><label for="n9">Portraits</label><input class="r" type="checkbox" name="niches" value="Editing only" id="n10"><label for="n10">Editing only</label></div>
+</fieldset>
+<div class="g"><label class="f">Team size<input type="number" name="team_size" placeholder="Number of people"></label><label class="f">Equipment you have<input type="text" name="equipment" placeholder="e.g. cameras, gimbal, lights, drone"></label></div>
+<fieldset class="f"><legend style="padding:0;margin-bottom:8px;font-weight:500">When you are open</legend>
+<div class="o"><input class="r" type="checkbox" name="open_days" value="Weekdays" id="so1"><label for="so1">Weekdays</label><input class="r" type="checkbox" name="open_days" value="Weekends" id="so2"><label for="so2">Weekends</label><input class="r" type="checkbox" name="open_days" value="Wedding and festival season" id="so3"><label for="so3">Wedding and festival season</label><input class="r" type="checkbox" name="open_days" value="By appointment" id="so4"><label for="so4">By appointment</label></div>
+</fieldset>
+<fieldset class="f"><legend style="padding:0;margin-bottom:8px;font-weight:500">Time slots you take bookings</legend>
+<div class="o"><input class="r" type="checkbox" name="time_slots" value="Morning, 10 AM to 1 PM" id="tt1"><label for="tt1">Morning, 10 AM to 1 PM</label><input class="r" type="checkbox" name="time_slots" value="Afternoon, 2 to 5 PM" id="tt2"><label for="tt2">Afternoon, 2 to 5 PM</label><input class="r" type="checkbox" name="time_slots" value="Evening, 5 to 7 PM" id="tt3"><label for="tt3">Evening, 5 to 7 PM</label></div>
+</fieldset>
+<fieldset class="f"><legend style="padding:0;margin-bottom:8px;font-weight:500">Notice you need before a booking</legend>
+<div class="o"><input class="r" type="radio" name="notice" value="Same day" id="nn1"><label for="nn1">Same day</label><input class="r" type="radio" name="notice" value="1 to 2 days" id="nn2"><label for="nn2">1 to 2 days</label><input class="r" type="radio" name="notice" value="About a week" id="nn3"><label for="nn3">About a week</label><input class="r" type="radio" name="notice" value="2 weeks or more" id="nn4"><label for="nn4">2 weeks or more</label></div>
+</fieldset>
+<div class="g"><label class="f">Next free date<input type="date" name="next_free_date"></label><label class="f">Dates already booked or closed<input type="text" name="unavailable_dates" placeholder="e.g. 12 Dec, 20 Dec, 5 Jan"></label></div>
+<label class="f">Link to your best work<input type="url" name="best_work" required placeholder="Instagram, YouTube or Drive link"></label>
+<label class="f">Studio logo or photo<input type="file" name="logo" accept="image/*"></label>
+<label style="display:flex;gap:12px;align-items:flex-start;line-height:1.5"><input type="checkbox" name="permission" value="Yes" required style="width:22px;height:22px;flex:none;accent-color:#FF5A1F">I give permission to list my studio and show the details above on the Kyoso Clan page.</label>
+<button type="submit" style="align-self:flex-start;background:#FF5A1F;color:#0F1115;border:0;padding:16px 28px;border-radius:999px;font:inherit;font-weight:700;cursor:pointer">Request to be listed</button>
+<p style="margin:0;color:#A9ABB3;font-size:14px">We review every request within working days.</p>
+</form>
+</main>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1440,"height":2200}}'>
+class Component extends DCLogic {
+renderVals() {
+return {};
+}
+}
+</script>
+</body>
+</html>

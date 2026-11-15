@@ -1,0 +1,9 @@
+# Netlify: drag the project folder into the Netlify dashboard, or connect the repository.
+# There is no build step; the folder itself is the site.
+[build]
+  publish = "."
+
+[[headers]]
+  for = "/assets/*"
+  [headers.values]
+    Cache-Control = "public, max-age=3600"

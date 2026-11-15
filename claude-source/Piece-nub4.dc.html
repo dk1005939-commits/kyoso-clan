@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Join Creators Zone</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+  <helmet>
+    <style>
+      html, body { margin: 0; height: 100%; }
+    </style>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&amp;display=swap">
+<style>
+body{margin:0}
+a{color:#FF5A1F}
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-24px)}}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.35}}
+.fl{position:absolute;animation:float 9s ease-in-out infinite}
+.pulse{animation:pulse 1.4s ease-in-out infinite}
+.g{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px}
+.f{display:flex;flex-direction:column;gap:8px;font-weight:500;border:0;padding:0;margin:0;min-width:0}
+.f>input{background:#0F1115;color:#F4F1EA;border:1px solid #3A3F4B;border-radius:12px;padding:14px;font:inherit;color-scheme:dark}
+.f>input:focus{outline:2px solid #FF5A1F}
+::placeholder{color:#8C8F99}
+.r{position:absolute;opacity:0;pointer-events:none}
+.o{display:flex;flex-wrap:wrap;gap:10px}
+.o label{padding:12px 20px;border:1px solid #3A3F4B;border-radius:999px;cursor:pointer}
+.r:checked+label{background:#FF5A1F;color:#0F1115;border-color:#FF5A1F}
+.r:focus-visible+label{outline:2px solid #F4F1EA}
+@media (prefers-reduced-motion:reduce){*{animation:none!important}}
+</style>
+  </helmet>
+<nav style="display:flex;flex-wrap:wrap;gap:16px;align-items:center;justify-content:space-between;padding:24px 48px; position: absolute; left: 0px; top: 0px; right: auto; bottom: auto; margin: 0px; box-sizing: border-box; width: 1160px;">
+<a href="Main.dc.html" style="color:#F4F1EA;text-decoration:none;font-weight:700;font-size:20px;letter-spacing:.08em"><span class="pulse" style="display:inline-block;width:10px;height:10px;border-radius:50%;background:#FF5A1F;margin-right:10px"></span>CREATORS ZONE</a>
+<a href="Main.dc.html" style="color:#A9ABB3;text-decoration:none">Back to home</a>
+</nav>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+renderVals() {
+return {};
+}
+}
+</script>
+</body>
+</html>

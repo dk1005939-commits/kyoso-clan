@@ -1,0 +1,106 @@
+{
+  "attachments": {},
+  "boards": {
+    "Book.dc.html": {
+      "expand": "fill",
+      "h": 1300,
+      "is_interactive": true,
+      "title": "Booking form",
+      "w": 1440,
+      "x": 3040,
+      "y": 0
+    },
+    "Join.dc.html": {
+      "expand": "fill",
+      "h": 2750,
+      "is_interactive": true,
+      "title": "Join form",
+      "w": 1175,
+      "x": 1529,
+      "y": -540
+    },
+    "Main.dc.html": {
+      "expand": "fill",
+      "h": 6500,
+      "is_interactive": true,
+      "title": "Home",
+      "w": 1440,
+      "x": 3040,
+      "y": -6500
+    },
+    "Piece-bd7d.dc.html": {
+      "frameless": true,
+      "h": 91,
+      "title": "Nav (2)",
+      "w": 1425,
+      "x": 6,
+      "y": -968
+    },
+    "Piece-mc2h.dc.html": {
+      "frameless": true,
+      "h": 1023,
+      "title": "Box",
+      "w": 1425,
+      "x": 1279,
+      "y": -1863
+    },
+    "Piece-nub4.dc.html": {
+      "frameless": true,
+      "h": 71,
+      "title": "Nav",
+      "w": 1160,
+      "x": 1090,
+      "y": -54
+    },
+    "Profile.dc.html": {
+      "expand": "fill",
+      "h": 2300,
+      "is_interactive": true,
+      "title": "Studio profile",
+      "w": 1440,
+      "x": 6080,
+      "y": 0
+    },
+    "Requests.dc.html": {
+      "expand": "fill",
+      "h": 1200,
+      "is_interactive": true,
+      "title": "Provider requests",
+      "w": 1440,
+      "x": 7600,
+      "y": 0
+    },
+    "Studio.dc.html": {
+      "expand": "fill",
+      "h": 2200,
+      "is_interactive": true,
+      "title": "Studio listing request",
+      "w": 1440,
+      "x": 4560,
+      "y": 0
+    }
+  },
+  "createdOnFiles": {
+    "at": "2026-11-04T09:00:00Z",
+    "v": 1
+  },
+  "designSystems": [],
+  "launch": {
+    "view": "canvas"
+  },
+  "notes": {},
+  "order": [
+    "Main.dc.html",
+    "Join.dc.html",
+    "Book.dc.html",
+    "Studio.dc.html",
+    "Profile.dc.html",
+    "Requests.dc.html",
+    "Piece-nub4.dc.html",
+    "Piece-bd7d.dc.html",
+    "Piece-mc2h.dc.html"
+  ],
+  "pages": [],
+  "title": "Kyoso Clan \u2013 Home Page",
+  "v": 3
+}

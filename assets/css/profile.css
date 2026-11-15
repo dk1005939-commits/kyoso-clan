@@ -1,0 +1,13 @@
+body{margin:0}
+a{color:#FF5A1F}a:hover{color:#FF8A5C}
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-24px)}}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.35}}
+.fl{position:absolute;animation:float 9s ease-in-out infinite}
+.pulse{animation:pulse 1.4s ease-in-out infinite}
+.tg{display:inline-block;border-radius:999px;padding:4px 12px;font-size:13px;font-weight:700;border:1px solid #3A3F4B}
+.tg.v{border-color:#FF5A1F;color:#FF5A1F}
+.tg.f{background:#FF5A1F;color:#0F1115;border-color:#FF5A1F}
+.tg.p{border-style:dashed;color:#A9ABB3}
+.ch{display:inline-block;border:1px solid #3A3F4B;border-radius:999px;padding:8px 16px;font-size:14px}
+[style*="background:#FF5A1F"]{box-shadow:0 0 22px rgba(255,90,31,.45)}
+@media (prefers-reduced-motion:reduce){*{animation:none!important}}

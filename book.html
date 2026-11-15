@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Book Kyoso Clan</title>
+<meta name="description" content="Book event coverage with Kyoso Clan: choose one creator or a whole team and pick a slot.">
+<meta name="theme-color" content="#0F1115">
+<link rel="icon" type="image/png" href="assets/img/favicon.png">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&amp;display=swap">
+<link rel="stylesheet" href="assets/css/book.css">
+<style>#app.cloak{visibility:hidden}</style>
+<noscript><style>#app.cloak{visibility:visible}</style></noscript>
+</head>
+<body>
+<div id="app" class="cloak">
+<div style="background:#0F1115;color:#F4F1EA;font-family:'Space Grotesk',sans-serif;min-height:100vh;position:relative;z-index:0;overflow:hidden">
+<div aria-hidden="true" style="position:absolute;inset:0;z-index:-1;pointer-events:none">
+<div style="position:absolute;width:420px;height:420px;border-radius:50%;background:#FF5A1F;opacity:.18;filter:blur(90px);top:-60px;right:-80px"></div>
+<div class="fl" style="width:200px;height:200px;border:2px solid #FF5A1F;border-radius:50%;top:140px;right:6%;opacity:.35"></div>
+<div class="fl" style="width:120px;height:68px;border:2px solid #3A3F4B;border-radius:10px;top:700px;left:4%;animation-duration:11s;animation-direction:reverse"></div>
+</div>
+<nav style="display:flex;flex-wrap:wrap;gap:16px;align-items:center;justify-content:space-between;padding:24px 48px">
+<a href="index.html" style="color:#F4F1EA;text-decoration:none;font-weight:700;font-size:20px;letter-spacing:.08em"><span class="pulse" style="display:inline-block;width:10px;height:10px;border-radius:50%;background:#FF5A1F;margin-right:10px"></span>KYOSO CLAN</a>
+<a href="index.html" style="color:#A9ABB3;text-decoration:none">Back to home</a>
+</nav>
+<main style="max-width:760px;margin:0 auto;padding:48px 24px 96px;display:flex;flex-direction:column;gap:28px">
+<div style="color:#FF5A1F;font-size:14px;font-weight:500;letter-spacing:.16em">BOOK EVENT COVERAGE</div>
+<h1 style="margin:0;font-size:56px;line-height:1.05;font-weight:700;letter-spacing:-.02em">Book Kyoso Clan</h1>
+<p style="margin:0;border:1px solid #FF5A1F;border-radius:16px;padding:20px 24px;line-height:1.5">Tell us about your event, choose one person or a team, and pick a slot. We match every booking to the right creator or studio. We review every request within working days.</p>
+<form action="https://formsubmit.co/deepakframes369@gmail.com" method="POST" target="_blank" style="background:#181B22;border:1px solid #262A33;border-radius:20px;padding:36px;display:flex;flex-direction:column;gap:24px">
+<input type="hidden" name="_subject" value="New Kyoso Clan booking request">
+<input type="hidden" name="_template" value="table">
+<input type="hidden" name="selected_providers" value="{{pickedValue}}">
+<div style="display:flex;flex-direction:column;gap:10px">
+<div style="display:flex;justify-content:space-between;gap:12px;color:#A9ABB3;font-size:14px"><span>Step {{stepNo}} of 4</span><span>{{stepName}}</span></div>
+<div style="height:6px;background:#262A33;border-radius:999px"><div style="height:6px;border-radius:999px;background:#FF5A1F;box-shadow:0 0 12px rgba(255,90,31,.6);width:{{pct}}"></div></div>
+</div>
+
+<div id="step1" class="{{s1}}" style="display:flex;flex-direction:column;gap:24px">
+<fieldset class="f"><legend style="padding:0;margin-bottom:8px;font-weight:500">Event or function</legend>
+<div class="o"><sc-for list="{{events}}" as="e"><input class="r" type="radio" name="event_type" value="{{e.value}}" id="{{e.id}}" required checked="{{e.checked}}" data-on-change="{{e.pick}}"><label for="{{e.id}}">{{e.value}}</label></sc-for></div>
+</fieldset>
+<fieldset class="f"><legend style="padding:0;margin-bottom:8px;font-weight:500">Area</legend>
+<div class="o"><sc-for list="{{areas}}" as="a"><input class="r" type="radio" name="area" value="{{a.value}}" id="{{a.id}}" required checked="{{a.checked}}" data-on-change="{{a.pick}}"><label for="{{a.id}}">{{a.value}}</label></sc-for></div>
+</fieldset>
+<div class="g"><label class="f">Venue<input type="text" name="venue" required placeholder="Where is the event?"></label><label class="f">Number of guests<input type="number" name="guests" min="1" placeholder="Approximate"></label></div>
+<label class="f">Event date<input type="date" name="date" required data-on-change="{{onDate}}"></label>
+<fieldset class="f"><legend style="padding:0;margin-bottom:8px;font-weight:500">Time slot</legend>
+<div class="o"><input class="r" type="radio" name="time_slot" value="Morning, 10 AM to 1 PM" required id="s1"><label for="s1">Morning, 10 AM to 1 PM</label><input class="r" type="radio" name="time_slot" value="Afternoon, 2 to 5 PM" id="s2"><label for="s2">Afternoon, 2 to 5 PM</label><input class="r" type="radio" name="time_slot" value="Evening, 5 to 7 PM" id="s3"><label for="s3">Evening, 5 to 7 PM</label></div>
+</fieldset>
+</div>
+
+<div id="step2" class="{{s2}}" style="display:flex;flex-direction:column;gap:24px">
+<fieldset class="f"><legend style="padding:0;margin-bottom:8px;font-weight:500">Coverage</legend>
+<div class="o"><sc-for list="{{coverages}}" as="c"><input class="r" type="radio" name="coverage" value="{{c.value}}" id="{{c.id}}" required checked="{{c.checked}}" data-on-change="{{c.pick}}"><label for="{{c.id}}">{{c.label}}</label></sc-for></div>
+</fieldset>
+<div style="display:flex;flex-direction:column;gap:10px"><div style="font-weight:500">Quick teams</div><div style="display:flex;flex-wrap:wrap;gap:10px"><sc-for list="{{teams}}" as="t"><button type="button" class="{{t.cls}}" data-on-click="{{t.pick}}">{{t.label}}</button></sc-for></div><div style="color:#A9ABB3;font-size:14px">Pick a ready-made team, or set your own numbers below.</div></div>
+<div class="g"><label class="f">Photographers needed<input type="number" name="photographers" min="0" placeholder="0" value="{{ph}}" data-on-change="{{onPh}}"></label><label class="f">Videographers needed<input type="number" name="videographers" min="0" placeholder="0" value="{{vd}}" data-on-change="{{onVd}}"></label><label class="f">Editors needed<input type="number" name="editors" min="0" placeholder="0" value="{{ed}}" data-on-change="{{onEd}}"></label></div>
+<fieldset class="f"><legend style="padding:0;margin-bottom:8px;font-weight:500">Purpose</legend>
+<div class="o"><input class="r" type="radio" name="purpose" value="Shooting" id="p1"><label for="p1">Shooting</label><input class="r" type="radio" name="purpose" value="Editing" id="p2"><label for="p2">Editing</label><input class="r" type="radio" name="purpose" value="Both shooting and editing" id="p3"><label for="p3">Both shooting and editing</label><input class="r" type="radio" name="purpose" value="Photography" id="p4"><label for="p4">Photography</label></div>
+</fieldset>
+<fieldset class="f"><legend style="padding:0;margin-bottom:8px;font-weight:500">Category</legend>
+<div class="o"><input class="r" type="radio" name="category" value="Reels" id="c1"><label for="c1">Reels</label><input class="r" type="radio" name="category" value="Motion graphics promo" id="c2"><label for="c2">Motion graphics promo</label><input class="r" type="radio" name="category" value="Brand / product video" id="c3"><label for="c3">Brand / product video</label><input class="r" type="radio" name="category" value="Event coverage" id="c4"><label for="c4">Event coverage</label><input class="r" type="radio" name="category" value="Photography" id="c5"><label for="c5">Photography</label></div>
+</fieldset>
+</div>
+
+<div id="step3" class="{{s3}}" style="display:flex;flex-direction:column;gap:24px">
+<div style="display:flex;flex-direction:column;gap:12px"><div style="font-weight:500">Suggested for you</div>
+<sc-if value="{{hasSug}}">
+<sc-for list="{{sug}}" as="p">
+<div style="border:1px solid #262A33;border-radius:16px;padding:16px;display:flex;flex-wrap:wrap;gap:12px;align-items:center;justify-content:space-between">
+<div style="display:flex;flex-direction:column;gap:4px"><div style="font-weight:700">{{p.name}}</div><div style="color:#FF5A1F;font-size:13px;font-weight:700">{{p.best}}</div><div style="color:#A9ABB3;font-size:14px">{{p.line}}</div></div>
+<button type="button" class="{{p.cls}}" data-on-click="{{p.pick}}">{{p.btn}}</button>
+</div>
+</sc-for>
+</sc-if>
+<sc-if value="{{noSug}}"><p style="margin:0;color:#A9ABB3">No match yet. Go back, choose an area and coverage, and suggestions appear here.</p></sc-if>
+<div style="color:#A9ABB3;font-size:14px">Sample providers for now. Your selection: {{pickedText}}</div>
+</div>
+<fieldset class="f"><legend style="padding:0;margin-bottom:8px;font-weight:500">Budget</legend>
+<div class="o"><input class="r" type="radio" name="budget" value="Under 10,000" id="bd1"><label for="bd1">Under ₹10,000</label><input class="r" type="radio" name="budget" value="10,000 to 25,000" id="bd2"><label for="bd2">₹10,000 to ₹25,000</label><input class="r" type="radio" name="budget" value="25,000 to 50,000" id="bd3"><label for="bd3">₹25,000 to ₹50,000</label><input class="r" type="radio" name="budget" value="Above 50,000" id="bd4"><label for="bd4">Above ₹50,000</label><input class="r" type="radio" name="budget" value="Not sure" id="bd5"><label for="bd5">Not sure</label></div>
+</fieldset>
+<label class="f">Preferred creator or studio (optional)<input type="text" name="preferred" placeholder="Name of the creator or studio you like"></label>
+</div>
+
+<div id="step4" class="{{s4}}" style="display:flex;flex-direction:column;gap:24px">
+<div class="g"><label class="f">Full name<input type="text" name="name" required placeholder="Your name"></label><label class="f">Phone / WhatsApp<input type="tel" name="phone" required placeholder="+91"></label></div>
+<label class="f">Email<input type="email" name="email" required placeholder="you@email.com"></label>
+<label class="f">Your opinion<textarea name="opinion" rows="5" placeholder="Write your thoughts, ideas or anything you want us to know"></textarea></label>
+<div style="border:1px dashed #3A3F4B;border-radius:16px;padding:16px;color:#A9ABB3;line-height:1.5">Advance payment of 25 to 30% locks your slot once we confirm it. Payment link: [YOUR PAYMENT LINK]</div>
+</div>
+
+<div style="display:flex;flex-wrap:wrap;gap:12px;align-items:center">
+<button type="button" class="{{backCls}}" data-on-click="{{back}}">Back</button>
+<button type="button" class="{{nextCls}}" data-on-click="{{next}}">Next</button>
+<button type="submit" class="{{submitCls}}">Request this booking</button>
+</div>
+<p style="margin:0;color:#A9ABB3;font-size:14px">Requests are reviewed within working days. We confirm with the creator or studio you chose, then reply to you.</p>
+</form>
+</main>
+</div>
+</div>
+<script src="assets/js/dc-lite.js"></script>
+<script src="assets/js/book.js"></script>
+</body>
+</html>
